@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DHW-vW-mG2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nS7-lc-7Vc">
+            <objects>
+                <viewController id="DHW-vW-mG2" customClass="ViewController" customModule="tableSelectMaxNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bBd-WT-MZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-7Y-XeM">
+                                <rect key="frame" x="0.0" y="124.5" width="414" height="737.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DHW-vW-mG2" id="mYO-mn-LVg"/>
+                                    <outlet property="delegate" destination="DHW-vW-mG2" id="8gB-2V-52Y"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJX-iz-GHj">
+                                <rect key="frame" x="10" y="74" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pHz-te-nRI"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vJX-iz-GHj" firstAttribute="top" secondItem="pHz-te-nRI" secondAttribute="top" constant="30" id="0cx-ER-g0E"/>
+                            <constraint firstItem="pHz-te-nRI" firstAttribute="bottom" secondItem="VQG-7Y-XeM" secondAttribute="bottom" id="3Yh-ig-2Kr"/>
+                            <constraint firstItem="pHz-te-nRI" firstAttribute="trailing" secondItem="vJX-iz-GHj" secondAttribute="trailing" constant="10" id="ekn-U4-Pxr"/>
+                            <constraint firstItem="VQG-7Y-XeM" firstAttribute="top" secondItem="vJX-iz-GHj" secondAttribute="bottom" constant="30" id="hNf-0n-tbK"/>
+                            <constraint firstItem="pHz-te-nRI" firstAttribute="trailing" secondItem="VQG-7Y-XeM" secondAttribute="trailing" id="j2a-4T-u2S"/>
+                            <constraint firstItem="VQG-7Y-XeM" firstAttribute="leading" secondItem="pHz-te-nRI" secondAttribute="leading" id="pKq-0a-qUU"/>
+                            <constraint firstItem="vJX-iz-GHj" firstAttribute="leading" secondItem="pHz-te-nRI" secondAttribute="leading" constant="10" id="zeC-Ov-EfF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblNumberMaxSelec" destination="vJX-iz-GHj" id="1Ea-Vc-Ceu"/>
+                        <outlet property="tableView" destination="VQG-7Y-XeM" id="GYE-Qh-LuE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dql-4e-qBu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+</document>
